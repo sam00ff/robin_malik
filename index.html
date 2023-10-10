@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Include FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Add this CSS for the profile card styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .profile-card {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .profile-pic {
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            top: 10px; /* Adjust the top position as needed */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Center horizontally */
+            z-index: 1; /* Place the profile pic in front */
+        }
+
+        .profile-pic img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 15px solid #fff; /* Add a white border with 15px border radius */
+        }
+
+        .banner {
+            background-image: url('banner.jpg'); /* Replace 'banner.jpg' with your banner image URL */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 50px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .profile-info {
+            text-align: center;
+            padding: 40px;
+            color: #333;
+        }
+
+        .circle-button {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: #007bff;
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .circle-button::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .call-button::before {
+            content: "\f095"; /* FontAwesome phone icon */
+            font-family: FontAwesome;
+            margin-right: 0px;
+            padding: 2px;
+        }
+
+        .email-button::before {
+            content: "\f0e0"; /* FontAwesome envelope icon */
+            font-family: FontAwesome;
+            margin-right: 0px;
+        }
+
+        .contact-info {
+            background-color: rgb(250, 249, 249);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            border-radius: 15px;
+            margin-top: 15px;
+        }
+
+        .contact-icon {
+            flex: 0 0 30px; /* Adjust the width of the icon container */
+            margin-right: 10px;
+            font-size: 24px;
+            color: #343536;
+        }
+
+        .contact-details {
+            flex: 1;
+        }
+
+        .contact-details a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .contact-details p {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        .social-media-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-media-icons a {
+            text-decoration: none;
+            color: #007bff;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+
+        .add-to-contacts {
+            text-align: center;
+            margin-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .add-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/46f55c5d6e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="banner">
+            <!-- Banner content goes here -->
+        </div>
+        <div class="profile-pic">
+            <img src="rm.webp" alt="Profile Picture">
+        </div>
+        <div class="profile-info">
+            <h2>Robin Malik</h2>
+            <p>Entrepreneur</p>
+            <div class="buttons">
+                <a href="tel:123456789"><div class="circle-button call-button"></div></a>
+                <a href="mailto:email@example.com"><div class="circle-button email-button"></div></a>
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="contact-icon">
+                <i class="fas fa-mobile"></i> <!-- FontAwesome phone icon -->
+            </div>
+                       
+            <div class="contact-details">
+                <a href="tel:+61455226314">+61455226314</a> <!-- Clickable phone number -->
+                <p>Mobile Number</p> <!-- Title "Mobile Number" -->
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="contact-icon">
+                <i class="fas fa-business-time"></i> <!-- FontAwesome envelope icon -->
+            </div>
+            <div class="contact-details">
+                <a href="mailto:robinmalik036@gmail.com">robinmalik036@gmail.com</a> <!-- Clickable email address -->
+                <p>Email Address</p> <!-- Title "Email Address" -->
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="contact-icon">
+                <i class="fas fa-business-time"></i> <!-- FontAwesome envelope icon -->
+            </div>
+            <div class="contact-details">
+                <a href="https://conors.com.au/">Conor Australia</a> <!-- Clickable email address -->
+                <p>CEO</p> <!-- Title "Email Address" -->
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="contact-icon">
+                <i class="fas fa-business-time"></i> <!-- FontAwesome envelope icon -->
+            </div>
+            <div class="contact-details">
+                <a href="https://bidetaustralia.com.au/">Bidet Australia</a> <!-- Clickable email address -->
+                <p>CEO</p> <!-- Title "Email Address" -->
+            </div>
+        </div>
+        <div class="social-media-icons">
+            <a href="https://twitter.com/RobinMalik___"  target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/robin-malik-8a4183261/"  target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/robin__malik___/" target="_blank"><i class="fab fa-instagram"></i></a>
+
+            <a href="skype:robinmalik88?call"  target="_blank"><i class="fab fa-skype"></i></a>
+        </div>
+        <div class="add-to-contacts">
+            <a href="tel:+61455226314" class="add-button">Add to Contacts</a>
+        </div>
+    </div>
+</body>
+</html>
